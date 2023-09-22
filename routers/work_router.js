@@ -3,8 +3,6 @@ const { fetchallwork, addnewwork, fetchonework, updatework, deleteallworks, dele
 const workrouter = express.Router()
 
 workrouter.get("/", fetchallwork)
-          .then((res) => console.log(res))
-          .catch((err) => console.log(err))
 
 workrouter.post("/", addnewwork)
 
